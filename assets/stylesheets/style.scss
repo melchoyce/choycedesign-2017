@@ -1,0 +1,107 @@
+/*
+Theme Name: melchoyce.design 2016
+Author: Mel Choyce & Kelly Dwan
+Author URI: https://melchoyce.design
+Description: ❤️
+Version: 1.0.0
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+MelChoyce.Design is created by the theme generator at http://components.underscores.me/, (C) 2015-2016 Automattic, Inc.
+Components is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+// scss --watch assets/stylesheets/style.scss:style.css
+
+@import "code/mixins";
+@import "code/variables-base";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "shared/normalize";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "shared/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "shared/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "shared/clearings";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "shared/typography";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "shared/media";
+
+/*--------------------------------------------------------------
+# Site Header
+--------------------------------------------------------------*/
+@import "components/header";
+
+/*--------------------------------------------------------------
+# Archive Pages
+--------------------------------------------------------------*/
+@import "components/index";
+
+/*--------------------------------------------------------------
+# Single Post/Page
+--------------------------------------------------------------*/
+@import "components/single";
+
+/*--------------------------------------------------------------
+# Comments
+--------------------------------------------------------------*/
+@import "components/comments";
+
+/*--------------------------------------------------------------
+# Site Footer
+--------------------------------------------------------------*/
+@import "components/footer";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "shared/infinitescroll";
+
+// @todo Emify this
+@media (max-width: 420px) {
+	.site-title {
+		font-size: 48px;
+	}
+	.site-bio {
+		font-size: 22px;
+	}
+	.entry-title {
+		font-size: 16px;
+	}
+	.social ul {
+		font-size: 12px;
+	}
+	.site-header,
+	.site-content {
+		padding: 30px 2em 60px;
+	}
+	.pagination {
+		margin: 30px 0 60px;
+	}
+	.site-footer {
+		padding: 30px 2em;
+	}
+}

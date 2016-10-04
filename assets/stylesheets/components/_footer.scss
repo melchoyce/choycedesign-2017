@@ -1,0 +1,38 @@
+.site-footer {
+	padding: 4em 3em;
+	background-color: $color__background-header;
+}
+
+.social {
+	max-width: 62rem;
+	margin: auto;
+}
+
+.social ul {
+	margin: 0;
+	padding: 0;
+	font-size: scale-down( 1rem );
+	font-weight: bold;
+	letter-spacing: 0.125em;
+	text-transform: uppercase;
+}
+
+.social ul li {
+	display: inline;
+}
+
+.social ul li a {
+	color: $color__link-on-dark;
+	text-decoration: none;
+}
+
+.social li:after {
+	content: '/';
+	margin-left: 0.5em;
+	color: white;
+	font-weight: bold;
+}
+
+.social li:last-of-type:after {
+	content: '';
+}

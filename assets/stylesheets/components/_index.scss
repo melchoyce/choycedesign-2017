@@ -1,0 +1,61 @@
+.site-content {
+	margin: auto;
+	padding: 5em 3em 7em;
+	max-width: 62rem;
+}
+
+.post {
+	margin: 2.5rem auto;
+}
+
+.entry-title {
+	margin-bottom: 0.2em;
+	font-size: scale-up( 1rem );
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.125em;
+	color: $color__highlight;
+}
+
+.entry-title a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.entry-date {
+	font-family: $font__header;
+	color: $color__text-meta;
+}
+
+.nav-links {
+	margin: 6em 0;
+	font-size: scale-down( 1rem );
+	font-weight: bold;
+	letter-spacing: 0.125em;
+	text-transform: uppercase;
+
+	a {
+		color: $color__link;
+		text-decoration: none;
+	}
+}
+
+.nav-previous,
+.nav-next {
+	display: inline-block;
+	width: 50%;
+}
+
+.nav-next {
+	text-align: right;
+}
+
+.nav-next a:after {
+	content: '\2192';
+	margin-left: 0.5em;
+}
+
+.nav-previous a:before {
+	content: '\2190';
+	margin-right: 0.5em;
+}

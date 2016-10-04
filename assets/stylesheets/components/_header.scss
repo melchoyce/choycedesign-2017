@@ -1,0 +1,46 @@
+.site-header {
+	padding: 5em 3em 7em;
+	background-color: $color__background-header;
+
+	.single & {
+		padding-top: 3.5em;
+		padding-bottom: 3.5em;
+	}
+}
+
+.site-title,
+.site-bio {
+	max-width: 62rem;
+	margin: auto;
+}
+
+.site-title {
+	margin-bottom: 0.6em;
+	font-size: scale-up( 1rem, 7 );
+	font-weight: bold;
+	color: $color__highlight-on-dark;
+	line-height: 1.1;
+
+	.single & {
+		margin-bottom: 0;
+	}
+
+	a {
+		color: $color__highlight-on-dark;
+		border-bottom: none;
+
+		&:hover,
+		&:focus,
+		&:active {
+			border-bottom: none;
+		}
+	}
+}
+
+.site-bio {
+	font-family: $font__header;
+	font-size: scale-up( 1rem, 2 );
+	font-weight: 400;
+	letter-spacing: .01em;
+	color: $color__text-on-dark;
+}

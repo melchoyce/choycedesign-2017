@@ -1,0 +1,22 @@
+a {
+	color: $color__link;
+	border-bottom: 2px solid transparent;
+	text-decoration: none;
+	transition: border-color .2s ease;
+
+	&:visited {
+		color: $color__link;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		border-bottom: 2px solid currentColor;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

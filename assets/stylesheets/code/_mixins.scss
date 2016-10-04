@@ -1,0 +1,41 @@
+// Scale a value up based on our scale number
+@function scale-up( $sizeValue: 1, $scale: 1 ) {
+	@return $sizeValue * pow( 1.2, $scale );
+}
+
+// Scale a value down based on our scale number
+@function scale-down( $sizeValue: 1, $scale: 1 ) {
+	@return $sizeValue * pow( 0.833333, $scale );
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// WTF Sass doesn't have exponents.
+@function pow( $number, $exponent ) {
+	$value: 1;
+
+	@if $exponent > 0 {
+		@for $i from 1 through $exponent {
+			$value: $value * $number;
+		}
+	}
+
+	@return $value;
+}

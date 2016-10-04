@@ -1,0 +1,16 @@
+.single {
+	.post {
+		margin-top: 0;
+		max-width: 42rem;
+	}
+
+	.entry-title {
+		margin: 0 0 1em;
+		font-size: scale-up( 1rem, 2 );
+		line-height: 1.2;
+	}
+
+	.pagination {
+		width: 100%;
+	}
+}

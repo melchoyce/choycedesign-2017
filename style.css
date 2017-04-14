@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: melchoyce.design 2016
+Theme Name: melchoyce.design 2017
 Author: Mel Choyce & Kelly Dwan
 Author URI: https://melchoyce.design
 Description: ❤️
@@ -9,8 +9,7 @@ Version: 1.0.0
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-MelChoyce.Design is created by the theme generator at http://components.underscores.me/, (C) 2015-2016 Automattic, Inc.
-Components is distributed under the terms of the GNU GPL v2 or later.
+MelChoyce.Design is created by the theme generator at http://components.underscores.me/, (C) 2015-2016 Automattic, Inc.Components is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
@@ -24,7 +23,8 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #fafafa; }
 
 article,
 aside,
@@ -300,7 +300,12 @@ dfn, cite, em, i {
   font-style: italic; }
 
 blockquote {
-  margin: 0 1em; }
+  margin: 0 1em 0 -15px;
+  padding-left: 1em;
+  border-left: 3px solid #ddd;
+  font-style: italic;
+  color: #666;
+}
 
 address {
   margin: 0 0 1em; }
@@ -604,6 +609,20 @@ object {
   color: #FAFAFA; }
 
 /*--------------------------------------------------------------
+# Site Content
+--------------------------------------------------------------*/
+
+.entry-content {
+  font-family: "yrsa", georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.post-thumbnail {
+  display: none;
+}
+
+/*--------------------------------------------------------------
 # Archive Pages
 --------------------------------------------------------------*/
 .site-content {
@@ -672,6 +691,56 @@ object {
 /*--------------------------------------------------------------
 # Comments
 --------------------------------------------------------------*/
+
+ol.comment-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ol.comment-list li > ul, li > ol {
+  list-style-type: none;
+  margin-left: .6em;
+}
+.comment-body {
+  margin-bottom: 1.6em;
+  padding-left: 50px;
+}
+.comment-meta {
+  margin-bottom: 1em;
+}
+.comment-author {
+  margin: 0 0 6px;
+}
+.comment-list .avatar {
+  float: left;
+  margin-top: 3px;
+  margin-left: -50px;
+}
+.comment-metadata {
+  margin-top: -8px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.comment-metadata a {
+  color: #999;
+}
+.comment-metadata .edit-link:before {
+  margin-left: 3px;
+  padding-right: 6px;
+  content: '|';
+  color: #bbb;
+}
+.comment-content p {
+  margin: .5em 0 1em;
+}
+.reply {
+  margin-top: .5em;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;	
+}
+
 /*--------------------------------------------------------------
 # Site Footer
 --------------------------------------------------------------*/

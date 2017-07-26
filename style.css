@@ -726,13 +726,6 @@ ol.comment-list li > ul, li > ol {
   font-size: 13px;
   letter-spacing: 1px; }
 
-.social li:after {
-  content: '/';
-  margin-left: .5em;
-  margin-right: .5em;
-  color: white;
-  font-weight: 700; }
-
 /*--------------------------------------------------------------
 # Jetpack Customizations
 --------------------------------------------------------------*/

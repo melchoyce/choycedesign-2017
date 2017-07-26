@@ -736,19 +736,19 @@ ol.comment-list li > ul, li > ol {
 /*--------------------------------------------------------------
 # Jetpack Customizations
 --------------------------------------------------------------*/
-#jp-relatedposts {
+#jp-relatedposts.jp-relatedposts {
   border-top: 1px solid #eee;
   padding-top: 2em; }
-  #jp-relatedposts h3.jp-relatedposts-headline {
+  #jp-relatedposts.jp-relatedposts h3.jp-relatedposts-headline {
     font-size: 16px; }
-  #jp-relatedposts h3.jp-relatedposts-headline em:before {
+  #jp-relatedposts.jp-relatedposts h3.jp-relatedposts-headline em:before {
     border: none; }
-  #jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
+  #jp-relatedposts.jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
     margin-top: 1em;
     margin-bottom: .25em;
     line-height: 1.2; }
-  #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context,
-  #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date {
+  #jp-relatedposts.jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context,
+  #jp-relatedposts.jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date {
     line-height: 1.2; }
 
 /*--------------------------------------------------------------

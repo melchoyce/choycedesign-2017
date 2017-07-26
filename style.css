@@ -743,13 +743,18 @@ ol.comment-list li > ul, li > ol {
     font-size: 16px; }
   #jp-relatedposts.jp-relatedposts h3.jp-relatedposts-headline em:before {
     border: none; }
-  #jp-relatedposts.jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
+  #jp-relatedposts.jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post h4.jp-relatedposts-post-title {
     margin-top: 1em;
     margin-bottom: .25em;
     line-height: 1.2; }
-  #jp-relatedposts.jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context,
+  #jp-relatedposts.jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post.jp-relatedposts-post-nothumbs h4.jp-relatedposts-post-title {
+    margin-top: 0; }
+  #jp-relatedposts.jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post p.jp-relatedposts-post-excerpt {
+    margin-bottom: 0.5em; }
   #jp-relatedposts.jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date {
     line-height: 1.2; }
+  #jp-relatedposts.jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context {
+    display: none; }
 
 /*--------------------------------------------------------------
 # Site Footer

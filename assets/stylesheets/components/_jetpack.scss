@@ -10,14 +10,27 @@
 		border: none;
 	}
 
-	.jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
-		margin-top: 1em;
-		margin-bottom: .25em;
-		line-height: 1.2;
-	}
+	.jp-relatedposts-items .jp-relatedposts-post {
+		h4.jp-relatedposts-post-title {
+			margin-top: 1em;
+			margin-bottom: .25em;
+			line-height: 1.2;
+		}
 
-	.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context,
-	.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date {
-		line-height: 1.2;
+		&.jp-relatedposts-post-nothumbs h4.jp-relatedposts-post-title {
+			margin-top: 0;
+		}
+
+		p.jp-relatedposts-post-excerpt {
+			margin-bottom: 0.5em;
+		}
+
+		.jp-relatedposts-post-date {
+			line-height: 1.2;
+		}
+
+		.jp-relatedposts-post-context {
+			display: none;
+		}
 	}
 }

@@ -26,7 +26,11 @@ dfn, cite, em, i {
 }
 
 blockquote {
-	margin: 0 1em;
+	margin: 0 1em 0 -15px;
+	padding-left: 1em;
+	border-left: 3px solid $color__border-quote;
+	font-style: italic;
+	color: $color__text-quote;
 }
 
 address {

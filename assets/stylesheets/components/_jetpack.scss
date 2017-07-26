@@ -1,0 +1,23 @@
+#jp-relatedposts {
+	border-top: 1px solid #eee;
+	padding-top: 2em;
+
+	h3.jp-relatedposts-headline {
+		font-size: 16px;
+	}
+
+	h3.jp-relatedposts-headline em:before {
+		border: none;
+	}
+
+	.jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
+		margin-top: 1em;
+		margin-bottom: .25em;
+		line-height: 1.2;
+	}
+
+	.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context,
+	.jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date {
+		line-height: 1.2;
+	}
+}

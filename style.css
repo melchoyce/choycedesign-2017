@@ -5,14 +5,6 @@ Author: Mel Choyce & Kelly Dwan
 Author URI: https://melchoyce.design
 Description: ❤️
 Version: 1.0.0
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-MelChoyce.Design is created by the theme generator at http://components.underscores.me/, (C) 2015-2016 Automattic, Inc.Components is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 /*--------------------------------------------------------------
 # Normalize
@@ -103,7 +95,7 @@ svg:not(:root) {
   overflow: hidden; }
 
 figure {
-  margin: 1em 40px; }
+  margin: 0; }
 
 hr {
   box-sizing: content-box;
@@ -304,8 +296,7 @@ blockquote {
   padding-left: 1em;
   border-left: 3px solid #ddd;
   font-style: italic;
-  color: #666;
-}
+  color: #666; }
 
 address {
   margin: 0 0 1em; }
@@ -462,7 +453,7 @@ input[type="submit"] {
 # Lists
 --------------------------------------------------------------*/
 ul, ol {
-  margin: 0 0 1.5em 3em; }
+  margin: 0 0 1em -2em; }
 
 ul {
   list-style: disc; }
@@ -536,7 +527,9 @@ object {
     margin-left: auto;
     margin-right: auto; }
   .wp-caption .wp-caption-text {
-    margin: 0.8075em 0; }
+    margin: 0.8075em 0;
+    font-style: italic;
+    font-size: .9em; }
 
 .wp-caption-text {
   text-align: center; }
@@ -609,20 +602,6 @@ object {
   color: #FAFAFA; }
 
 /*--------------------------------------------------------------
-# Site Content
---------------------------------------------------------------*/
-
-.entry-content {
-  font-family: "yrsa", georgia, serif;
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-.post-thumbnail {
-  display: none;
-}
-
-/*--------------------------------------------------------------
 # Archive Pages
 --------------------------------------------------------------*/
 .site-content {
@@ -632,6 +611,14 @@ object {
 
 .post {
   margin: 2.5rem auto; }
+
+.entry-content {
+  font-family: “yrsa”, georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.5; }
+
+.post-thumbnail {
+  display: none; }
 
 .entry-title {
   margin-bottom: 0.2em;
@@ -691,55 +678,78 @@ object {
 /*--------------------------------------------------------------
 # Comments
 --------------------------------------------------------------*/
-
 ol.comment-list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
+
 ol.comment-list li > ul, li > ol {
   list-style-type: none;
-  margin-left: .6em;
-}
+  margin-left: .6em; }
+
 .comment-body {
   margin-bottom: 1.6em;
-  padding-left: 50px;
-}
+  padding-left: 50px; }
+
 .comment-meta {
-  margin-bottom: 1em;
-}
+  margin-bottom: 1em; }
+
 .comment-author {
-  margin: 0 0 6px;
-}
+  margin: 0 0 6px; }
+
 .comment-list .avatar {
   float: left;
   margin-top: 3px;
-  margin-left: -50px;
-}
+  margin-left: -50px; }
+
 .comment-metadata {
   margin-top: -8px;
   text-transform: uppercase;
   font-size: 12px;
-  letter-spacing: 1px;
-}
+  letter-spacing: 1px; }
+
 .comment-metadata a {
-  color: #999;
-}
+  color: #999; }
+
 .comment-metadata .edit-link:before {
   margin-left: 3px;
   padding-right: 6px;
   content: '|';
-  color: #bbb;
-}
+  color: #bbb; }
+
 .comment-content p {
-  margin: .5em 0 1em;
-}
+  margin: .5em 0 1em; }
+
 .reply {
   margin-top: .5em;
   text-transform: uppercase;
   font-size: 13px;
-  letter-spacing: 1px;
-}
+  letter-spacing: 1px; }
+
+.social li:after {
+  content: '/';
+  margin-left: .5em;
+  margin-right: .5em;
+  color: white;
+  font-weight: 700; }
+
+/*--------------------------------------------------------------
+# Jetpack Customizations
+--------------------------------------------------------------*/
+#jp-relatedposts {
+  border-top: 1px solid #eee;
+  padding-top: 2em; }
+  #jp-relatedposts h3.jp-relatedposts-headline {
+    font-size: 16px; }
+  #jp-relatedposts h3.jp-relatedposts-headline em:before {
+    border: none; }
+  #jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
+    margin-top: 1em;
+    margin-bottom: .25em;
+    line-height: 1.2; }
+  #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context,
+  #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date {
+    line-height: 1.2; }
 
 /*--------------------------------------------------------------
 # Site Footer
@@ -811,6 +821,25 @@ ol.comment-list li > ul, li > ol {
       background: transparent;
       border-bottom: 2px solid currentColor; }
 
+@media (max-width: 480px) {
+  h2 {
+    line-height: 1.2; }
+
+  .site-bio {
+    font-size: 1.2rem;
+    line-height: 1.5; }
+
+  .nav-previous, .nav-next {
+    display: block;
+    width: 100%;
+    text-align: center; }
+
+  .nav-previous {
+    margin-bottom: 1em; }
+
+  ol.comment-list li > ul,
+  li > ol {
+    margin-left: -1em; } }
 @media (max-width: 420px) {
   .site-title {
     font-size: 48px; }

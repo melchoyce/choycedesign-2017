@@ -28,8 +28,8 @@
 	<?php if ( is_home() ): ?>
 		<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 		<div class="site-bio">
-			<p>I’m a Boston based Product Designer working at Automattic. I’m currently focusing on customization, new user experience, and design hiring.</p>
-			<p>I’m also a guest committer for WordPress, where I contribute design for core and community projects. I co-organize the Boston WordPress meetups and WordCamp Boston.</p>
+			<p>I’m a Boston based Product Designer working at Automattic. I’m currently focusing on WordPress core and design hiring.</p>
+			<p>I'm currently co-leading the WordPress Customization Focus for 2017 and the 4.9 release. I also co-organize the Boston WordPress meetups and WordCamp Boston.</p>
 			<p>I love big typography, cold brew coffee, and craft beer.</p>
 		</div>
 	<?php else: ?>

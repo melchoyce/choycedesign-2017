@@ -16,7 +16,7 @@
 
 .site-title {
 	margin-bottom: 0.6em;
-	font-size: scale-up( 1rem, 7 );
+	font-size: scale-up(1rem, 7);
 	font-weight: bold;
 	color: $color__highlight-on-dark;
 	line-height: 1.1;
@@ -38,9 +38,9 @@
 }
 
 .site-bio {
-	font-family: $font__header;
-	font-size: scale-up( 1rem, 2 );
+	font-family: $font__main;
+	font-size: scale-up(1rem, 2);
 	font-weight: 400;
-	letter-spacing: .01em;
+	letter-spacing: 0.01em;
 	color: $color__text-on-dark;
 }

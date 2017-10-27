@@ -288,7 +288,10 @@ hr {
 p {
   margin-bottom: 1em; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -311,25 +314,33 @@ pre {
   overflow: auto;
   padding: 1.6em; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 1em; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
 big {
   font-size: 125%; }
 
-blockquote, q {
-  quotes: "" ""; }
-  blockquote:before, blockquote:after, q:before, q:after {
-    content: ""; }
+blockquote,
+q {
+  quotes: '' ''; }
+  blockquote:before, blockquote:after,
+  q:before,
+  q:after {
+    content: ''; }
 
 /*--------------------------------------------------------------
 # Headings
@@ -429,7 +440,7 @@ input[type="submit"] {
   background: #e6e6e6;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
-  font-size: 0.83333em;
+  font-size: 0.833333em;
   line-height: 1;
   padding: .6em 1em .4em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
@@ -582,7 +593,7 @@ object {
 
 .site-title {
   margin-bottom: 0.6em;
-  font-size: 3.58318rem;
+  font-size: 3.5831808rem;
   font-weight: bold;
   color: #D2E8BE;
   line-height: 1.1; }
@@ -598,7 +609,7 @@ object {
   font-family: "yrsa", georgia, serif;
   font-size: 1.44rem;
   font-weight: 400;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
   color: #FAFAFA; }
 
 /*--------------------------------------------------------------
@@ -613,9 +624,14 @@ object {
   margin: 2.5rem auto; }
 
 .entry-content {
-  font-family: “yrsa”, georgia, serif;
+  font-family: "yrsa", georgia, serif;
   font-size: 1.2rem;
   line-height: 1.5; }
+  .entry-content h1,
+  .entry-content h2,
+  .entry-content h3,
+  .entry-content h4 {
+    font-family: "proxima-nova", sans-serif; }
 
 .post-thumbnail {
   display: none; }
@@ -638,7 +654,7 @@ object {
 
 .nav-links {
   margin: 6em 0;
-  font-size: 0.83333rem;
+  font-size: 0.833333rem;
   font-weight: bold;
   letter-spacing: 0.125em;
   text-transform: uppercase; }
@@ -763,7 +779,7 @@ ol.comment-list li > ul, li > ol {
 .social ul {
   margin: 0;
   padding: 0;
-  font-size: 0.83333rem;
+  font-size: 0.833333rem;
   font-weight: bold;
   letter-spacing: 0.125em;
   text-transform: uppercase; }
@@ -806,7 +822,7 @@ ol.comment-list li > ul, li > ol {
     border-radius: 0;
     background: transparent;
     color: #e50f69;
-    font-size: 0.83333rem;
+    font-size: 0.833333rem;
     font-weight: bold;
     letter-spacing: 0.125em;
     text-transform: uppercase;
@@ -814,7 +830,7 @@ ol.comment-list li > ul, li > ol {
     transition: border-color .2s ease; }
     #infinite-handle span button:hover, #infinite-handle span button:focus, #infinite-handle span button:active {
       color: #e50f69;
-      font-size: 0.83333rem;
+      font-size: 0.833333rem;
       font-weight: bold;
       background: transparent;
       border-bottom: 2px solid currentColor; }

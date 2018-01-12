@@ -7,6 +7,14 @@
  * @package MelChoyce.Design
  */
 
+// Disable core login, only use WP.com (unless in debug mode)
+add_filter( 'jetpack_remove_login_form', function() {
+	if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
+		return false;
+	}
+	return true;
+} );
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *

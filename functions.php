@@ -7,7 +7,6 @@
  * @package MelChoyce.Design
  */
 
-if ( ! function_exists( 'choycedesign_2017_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -83,7 +82,6 @@ function choycedesign_2017_setup() {
 		'link',
 	) );
 }
-endif;
 add_action( 'after_setup_theme', 'choycedesign_2017_setup' );
 
 /**

@@ -10,6 +10,10 @@ ol {
 	list-style: decimal;
 }
 
+li {
+	line-height: 1.6;
+}
+
 li > ul,
 li > ol {
 	margin-bottom: 0;

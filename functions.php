@@ -100,7 +100,7 @@ add_action( 'after_setup_theme', 'choycedesign_2017_setup' );
  * @global int $content_width
  */
 function choycedesign_2017_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'choycedesign_2017_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'choycedesign_2017_content_width', 672 );
 }
 add_action( 'after_setup_theme', 'choycedesign_2017_content_width', 0 );
 

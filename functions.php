@@ -132,7 +132,7 @@ add_action( 'widgets_init', 'choycedesign_2017_widgets_init' );
  * Enqueue scripts and styles.
  */
 function choycedesign_2017_scripts() {
-	wp_enqueue_style( 'choycedesign-style', get_stylesheet_uri(), array(), '20180112' );
+	wp_enqueue_style( 'choycedesign-style', get_stylesheet_uri(), array(), '20180113' );
 
 	wp_enqueue_script( 'choycedesign-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 

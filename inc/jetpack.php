@@ -51,3 +51,12 @@ function choycedesign_2017_social_menu() {
 		jetpack_social_menu();
 	}
 }
+
+/**
+ * Change width here, rather than `$content_width`, so that this doesn't affect embeds
+ */
+function choycedesign_2017_photon_args( $args, $image ) {
+	$args['w'] = '1000';
+	return $args;
+}
+add_action( 'jetpack_photon_post_image_args', 'choycedesign_2017_photon_args', 10, 2 );

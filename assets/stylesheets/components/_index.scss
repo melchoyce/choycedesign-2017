@@ -44,7 +44,11 @@
 	color: $color__text-meta;
 }
 
-.wp-block-image {
+.wp-block-gallery,
+.wp-block-embed,
+.wp-block-image,
+.wp-block-video,
+.wp-block-audio {
 	&.alignwide {
 		margin: 0 -164px;
 

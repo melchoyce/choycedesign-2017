@@ -656,16 +656,28 @@ object {
   font-family: "yrsa", georgia, serif;
   color: #AAA; }
 
-.wp-block-image.alignwide {
+.wp-block-gallery.alignwide,
+.wp-block-embed.alignwide,
+.wp-block-image.alignwide,
+.wp-block-video.alignwide,
+.wp-block-audio.alignwide {
   margin: 0 -164px; }
   @media (max-width: 1000px) {
-    .wp-block-image.alignwide {
+    .wp-block-gallery.alignwide,
+    .wp-block-embed.alignwide,
+    .wp-block-image.alignwide,
+    .wp-block-video.alignwide,
+    .wp-block-audio.alignwide {
       width: 100vw;
       position: relative;
       left: 50%;
       right: 50%;
       margin: 0 -50vw; } }
-.wp-block-image.alignfull {
+.wp-block-gallery.alignfull,
+.wp-block-embed.alignfull,
+.wp-block-image.alignfull,
+.wp-block-video.alignfull,
+.wp-block-audio.alignfull {
   width: 100vw;
   position: relative;
   left: 50%;
